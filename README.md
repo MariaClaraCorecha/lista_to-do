@@ -1,8 +1,7 @@
 # lista To-Do
-##Este projeto foi desenvolvido com o objetivo de praticar React e TypeScript do zero, servindo como material de estudo e também como projeto para portfólio e estágio.
-Funcionalidades
-<hr/>
+Este projeto foi desenvolvido com o objetivo de praticar React e TypeScript do zero, servindo como material de estudo e também como projeto para portfólio e estágio.
 <br/>
+<h2>Funcionalidades:</h2><br/>
 -Adicionar tarefas <br/>
 -Remover tarefas <br/>
 -Marcar tarefas como concluídas<br/>
