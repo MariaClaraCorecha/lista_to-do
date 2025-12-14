@@ -1,0 +1,66 @@
+.todo-container {
+  font-family: poppins, sans-serif;
+  color: white;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #1258cada;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.todo-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.todo-input input {
+  color: rgb(5, 5, 37);
+  padding: 8px;
+  border-radius: 8px;
+  flex: 1;
+  padding: 8px;
+}
+
+.todo-input button {
+  color: white;
+  font-family: poppins, sans-serif;
+  background-color: darkblue;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.todo-input button:hover {
+  background-color: rgb(40, 40, 209);
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list li {
+  font-family: poppins, sans-serif;
+  color: rgb(0, 0, 10);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.todo-list button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}

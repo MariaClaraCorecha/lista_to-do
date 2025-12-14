@@ -1,4 +1,6 @@
 import { useState } from "react";
+import "./TodoList.css";
+
 
 function TodoList() {  //Função com estado de memoria dos componentes
   const [tarefa, setTarefa] = useState<string>(""); // Estado para armazenar a tarefa atual
@@ -17,7 +19,10 @@ function TodoList() {  //Função com estado de memoria dos componentes
   }
 
   return (
-    <div>
+  <div className="todo-container">
+    <h2>Minha Lista de Tarefas</h2>
+
+    <div className="todo-input">
       <input
         type="text"
         placeholder="Digite uma tarefa"
@@ -26,19 +31,21 @@ function TodoList() {  //Função com estado de memoria dos componentes
       />
 
       <button onClick={adicionarTarefa}>Adicionar</button>
-
-      <p>Total de tarefas: {tarefas.length}</p>
-
-      <ul>
-        {tarefas.map((item, index) => (
-          <li key={index}>
-            {item}
-            <button onClick={() => removerTarefa(index)}></button>
-          </li>
-        ))}
-      </ul>
     </div>
-  );
+
+    <p>Total de tarefas: {tarefas.length}</p>
+
+    <ul className="todo-list">
+      {tarefas.map((item, index) => (
+        <li key={index}>
+          {item}
+          <button onClick={() => removerTarefa(index)}></button>
+        </li>
+      ))}
+    </ul>
+  </div>
+);
+
 }
 
 export default TodoList;
